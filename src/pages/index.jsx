@@ -261,13 +261,11 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            資源の回収ボックス検索アプリ - boxx
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            資源が効率的に回収、再利用される社会へ -
+            boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するアプリです。
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
