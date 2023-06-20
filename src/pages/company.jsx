@@ -10,6 +10,9 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import CompanyProfile from '../components/CompanyProfile'
+import CompanyHistory from '../components/CompanyHistory'
+import MailIcon from '../components/Icons'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -22,17 +25,6 @@ function SocialLink({ className, href, children, icon: Icon }) {
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
-}
-
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
   )
 }
 
@@ -59,17 +51,10 @@ export default function Company() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               私たちは、資源が効率的に利用される社会の構築に必要なサービスを提供する会社です。
             </h1>
-            <div className="mt-12 space-y-5 text-base font-bold text-zinc-600 dark:text-zinc-400">
-              <p className="border-b">boxx合同会社</p>
-              <p className="border-b">〒104-0051 東京都中央区佃二丁目</p>
-              <p className="border-b">
-                <span className="text-xs font-light">代表社員</span> 羽山和行
-              </p>
-              <p className="border-b">
-                <span className="font-light">設立</span> 2023年6月
-              </p>
-            </div>
+            <CompanyProfile />
+            <CompanyHistory />
           </div>
+
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink href="#" icon={TwitterIcon}>
@@ -82,11 +67,11 @@ export default function Company() {
                 GitHub
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="/contact"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                お問合せフォーム
               </SocialLink>
             </ul>
           </div>
