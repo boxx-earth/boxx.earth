@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
@@ -12,28 +10,20 @@ import {
 import portraitImage from '@/images/portrait.jpg'
 import CompanyProfile from '../components/CompanyProfile'
 import CompanyHistory from '../components/CompanyHistory'
-import MailIcon from '../components/Icons'
-
-function SocialLink({ className, href, children, icon: Icon }) {
-  return (
-    <li className={clsx(className, 'flex')}>
-      <Link
-        href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  )
-}
+import { MailIcon } from '../components/Icons'
+import SocialLink from '../components/SocialLink'
+import Link from 'next/link'
+import { MailIconFillNone } from '../components/Icons'
 
 export default function Company() {
   return (
     <>
       <Head>
-        <title>boxxについて</title>
-        <meta name="description" content="boxxは" />
+        <title>会社概要 | boxx合同会社</title>
+        <meta
+          name="description"
+          content="会社概要 - boxxは、資源が効率的に利用される社会の構築に必要なサービスを提供する会社です。"
+        />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -60,7 +50,13 @@ export default function Company() {
               <SocialLink href="#" icon={TwitterIcon}>
                 Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/boxx.earth/"
+                icon={InstagramIcon}
+                className="mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
               </SocialLink>
               <SocialLink href="#" icon={GitHubIcon} className="mt-4">
