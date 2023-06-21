@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react'
 
-const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+export const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -10,5 +10,3 @@ const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
     </svg>
   )
 }
-
-export default MailIcon

@@ -12,8 +12,6 @@ import CompanyProfile from '../components/CompanyProfile'
 import CompanyHistory from '../components/CompanyHistory'
 import { MailIcon } from '../components/Icons'
 import SocialLink from '../components/SocialLink'
-import Link from 'next/link'
-import { MailIconFillNone } from '../components/Icons'
 
 export default function Company() {
   return (
