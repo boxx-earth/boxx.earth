@@ -3,5 +3,5 @@ export const headerNavItems = [
     {href: "/articles", children: "articles"},
     {href: "/projects", children: "projects"},
     {href: "/speaking", children: "speaking"},
-    {href: "/uses", children: "uses"},
+    {href: "/uses", children: "use"},
 ]
