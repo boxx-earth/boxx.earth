@@ -23,7 +23,7 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/company">会社情報</NavLink>
                 <NavLink href="/privacy">プライバシーポリシー</NavLink>
-                <NavLink href="/contact">ご連絡</NavLink>
+                <NavLink href="/contact">お問合せ</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} boxx. All rights reserved.
