@@ -45,7 +45,12 @@ export default function Company() {
 
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="#" icon={GitHubIcon} className="">
+                GitHub
+              </SocialLink>
+
+              <SocialLink className="mt-4" href="https://twitter.com/boxx_earth" icon={TwitterIcon} target="_blank"
+                rel="noopener noreferrer">
                 Twitter
               </SocialLink>
               <SocialLink
@@ -56,9 +61,6 @@ export default function Company() {
                 rel="noopener noreferrer"
               >
                 Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                GitHub
               </SocialLink>
               <SocialLink
                 href="/contact"

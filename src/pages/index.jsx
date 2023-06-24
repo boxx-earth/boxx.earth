@@ -268,26 +268,30 @@ export default function Home({ articles }) {
             boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するアプリです。
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
+          <SocialLink
               href="https://github.com"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+
+            />
+
+            <SocialLink
+              href="https://twitter.com/boxx_earth"
+              aria-label="Follow on Twitter"
+              icon={TwitterIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+
             />
             <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
+              href="https://instagram.com/boxx.earth/"
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+          />
           </div>
         </div>
       </Container>
