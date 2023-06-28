@@ -3,6 +3,7 @@ import Image from "next/image"
 import clsx from "clsx"
 import avatarImage from '@/images/avatar.jpg'
 import React from "react"
+import { Logo } from '@/components/Logo'
 
 type AvatarProps = {
     large?: boolean;
@@ -18,6 +19,12 @@ export const Avatar: React.FC<AvatarProps> = ({ large = false, className, ...pro
         className={clsx(className, 'pointer-events-auto')}
         {...props}
       >
+        {/* <div className={clsx(
+        'items-center rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+        large ? 'h-16 w-16' : 'h-9 w-9'
+      )}>
+        <Logo className="w-10 h-10" />
+      </div> */}
         <Image
           src={avatarImage}
           alt=""
