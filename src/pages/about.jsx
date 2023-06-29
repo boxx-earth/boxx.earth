@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>PETボトル</h2>
               <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中をすすいで、キャップやラベルは取り除いて下さい。</p>
-              <div className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
+              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
                   <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
@@ -48,13 +48,56 @@ export default function About() {
               </div>
 
               <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>段ボール</h2>
-              <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>ガムテープ、伝票などは取り除いて、たたんで下さい。</p>
-              <h2 className='mt-8 text-base font-semibold text-zinc-800 dark:text-zinc-100'>紙パック</h2>
-              <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>中を洗って、乾燥し、切り開いて下さい。</p>
-              <h2 className='mt-8 text-base font-semibold text-zinc-800 dark:text-zinc-100'>食品トレイ</h2>
-              <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>洗って乾かしくて下さい。</p>
-              <h2 className='mt-8 text-base font-semibold text-zinc-800 dark:text-zinc-100'>空き缶</h2>
-              <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>中をすすいで下さい。</p>
+              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>ガムテープ、伝票などは取り除いて、たたんで下さい。</p>
+              
+              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+              </div>
+
+
+              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>紙パック</h2>
+              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中を洗って、乾燥し、切り開いて下さい。</p>
+              
+              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+              </div>
+
+
+              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>食品トレイ</h2>
+              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>洗って乾かしくて下さい。</p>
+              
+              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+              </div>
+
+
+              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>空き缶</h2>
+              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中をすすいで下さい。</p>
+
+              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
+                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                </div>
+              </div>
+          
           </div>
         </div>
       </Container>
