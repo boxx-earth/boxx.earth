@@ -11,11 +11,24 @@ export const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   )
 }
 
-export const ChevronRight: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+// export const ChevronRight: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
+//   <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+// </svg>
+//   )
+// }
+
+export const ChevronRightIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
-  <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg>
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M6.75 5.75 9.25 8l-2.5 2.25"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }
 
