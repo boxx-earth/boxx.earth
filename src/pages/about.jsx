@@ -3,10 +3,8 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 
-import portraitImage from '@/images/portrait.jpg'
 import petBottle from '@/images/photos/image-1.jpg'
 import petBottlePrepared from '@/images/photos/image-2.jpg'
-
 
 export default function About() {
   return (
@@ -15,7 +13,7 @@ export default function About() {
         <title>boxxについて - boxx</title>
         <meta
           name="description"
-          content="boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するプラットフォームです。"
+          content="boxxは資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです。"
         />
       </Head>
       <Container className="mt-16 lg:mt-32">
