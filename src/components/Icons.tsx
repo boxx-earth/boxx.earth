@@ -1,5 +1,18 @@
 import React, { SVGProps } from 'react'
 
+export const ArrowLeftIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 export const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -11,19 +24,25 @@ export const MailIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   )
 }
 
-// export const ChevronRight: React.FC<SVGProps<SVGSVGElement>> = (props) => {
-//   return (
-//     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
-//   <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-// </svg>
-//   )
-// }
-
 export const ChevronRightIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
         d="M6.75 5.75 9.25 8l-2.5 2.25"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+export const ChevronDownIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+  return (
+    <svg viewBox="0 0 8 6" aria-hidden="true" {...props}>
+      <path
+        d="M1.75 1.75 4 4.25l2.25-2.5"
+        fill="none"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -79,18 +98,5 @@ export const CloseIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   )
 }
 
-export const ChevronDownIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg viewBox="0 0 8 6" aria-hidden="true" {...props}>
-      <path
-        d="M1.75 1.75 4 4.25l2.25-2.5"
-        fill="none"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 
