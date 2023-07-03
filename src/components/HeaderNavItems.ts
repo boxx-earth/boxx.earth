@@ -1,7 +1,7 @@
 export const headerNavItems = [
     {href: "/about", children: "boxxについて"},
-    {href: "/articles", children: "記事"},
-    {href: "/announcements", children: "お知らせ"},
+    {href: "/articles", children: "循環する資源"},
+    {href: "/topics", children: "トピックス"},
     {href: "/contact", children: "お問合せ"},
 ]
 
