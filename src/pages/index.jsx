@@ -14,7 +14,7 @@ import { Article } from '@/components/Article'
 import { Resume } from '@/components/Resume'
 import { Newsletter } from '@/components/Newsletter'
 import { Stats } from '@/components/Stats'
-// import { AppDownloadButtons } from '@/components/AppDownloadButtons'
+import { AppDownloadLinks } from '@/components/AppDownloadLinks'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -83,6 +83,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24 order-first lg:order-last">
+            <AppDownloadLinks />
             <Newsletter />
             <Stats />
           </div>
