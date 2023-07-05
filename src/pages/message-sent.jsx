@@ -18,8 +18,8 @@ export default function MessageSent() {
         title="メッセージを送信しました."
         intro="お問合せありがとうございます.近日中に担当者よりご連絡差し上げますので少々お待ちください."        
         children={
-                <Link href="/" className='flex items-center text-zinc-500 dark:text-zinc-400 hover:underline dark:hover:underline decoration-zinc-400'>
-                <ChevronRightIcon className="h-4 w-4 stroke-current" />ホームへ戻る
+                <Link href="/" className='inline-flex text-zinc-800 dark:text-zinc-200 hover:underline dark:hover:underline decoration-zinc-400transition hover:text-teal-500 dark:hover:text-teal-400'>
+                <ChevronRightIcon className="h-4 w-4 stroke-current self-center" />ホームへ戻る
                 </Link>
         }
       />
