@@ -10,13 +10,28 @@ export const AppDownloadLinks: React.FC = (props) => {
           <span className="ml-3">boxxアプリをダウンロード</span>
         </h2>
         <ul className="flex mt-5 h-12">
-          <li className="basis-1/2 bg-red-100 relative">
-            {/* <Image src="/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
+          <li className="basis-1/2 relative">
+            <Image src="/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
              fill 
              style={{objectFit: "contain"}} 
-             alt="App Storeでboxxアプリをダウンロードする." /> */}
+             alt="App Storeでboxxアプリをダウンロードする." />
           </li>
-          <li className="basis-1/2 bg-blue-200 relative">
+          <li className="basis-1/2 relative">
+            <Image src="/google-play-badge.png" 
+            fill
+            style={{objectFit: "contain"}}
+            alt="Google Playでboxxアプリをダウンロードする." />
+          </li>
+        </ul>
+
+        <ul className="flex mt-5 h-12">
+          <li className="basis-1/2 relative">
+            <Image src="/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
+             fill 
+             style={{objectFit: "contain"}} 
+             alt="App Storeでboxxアプリをダウンロードする." />
+          </li>
+          <li className="basis-1/2 relative">
             <Image src="/google-play-badge.png" 
             fill
             style={{objectFit: "contain"}}
