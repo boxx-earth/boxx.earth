@@ -17,10 +17,10 @@ export default function Company() {
   return (
     <>
       <Head>
-        <title>会社概要 | boxx合同会社</title>
+        <title>運営会社の情報 - boxx合</title>
         <meta
           name="description"
-          content="会社概要 - boxxは、資源が効率的に利用される社会の構築に必要なサービスを提供する会社です。"
+          content="会社概要 - boxx合同会社は、資源が効率的に循環利用される社会の構築に必要なサービスを提供する会社です。"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -37,7 +37,7 @@ export default function Company() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              私たちは、資源が効率的に利用される社会の構築に必要なサービスを提供する会社です。
+              私たちは、資源が効率的に循環利用される社会の構築に必要なサービスを提供する会社です。
             </h1>
             <CompanyProfile />
             <CompanyHistory />
