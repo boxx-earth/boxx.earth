@@ -13,23 +13,21 @@ export default function About() {
         <title>boxxについて - boxx</title>
         <meta
           name="description"
-          content="boxxは資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです。"
+          content="boxxは資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです."
         />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
           <div className="mx-auto max-w-2xl">
               <header className="flex flex-col">
-                <h1 className="text-4xl font-bold whitespace-pre text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                  使う、
-                  戻す、
-                  循環させる。
+                <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                boxxは資源の効率的な循環利用に関する情報を提供します.
                 </h1>
               </header>
               <div className='mt-8 text-base text-zinc-600 dark:text-zinc-400'>
               <p>
                 boxx（ボックス）は、使用済みのペットボトル、プラスチック容器、空き缶、ダンボール箱など、資源物の店頭回収ボックスを地図上で簡単に検索できるアプリです。
-                持続可能な社会の構築に不可欠な循環経済（サーキュラーエコノミー）の実現に向けて、私たちの日常から始めましょう。boxxを使って身近にある資源回収ボックスを見つけ、資源の循環を促進しましょう。
+                持続可能な社会の構築に不可欠なサーキュラーエコノミーの実現に向けて、私たちの日常から始めましょう。boxxを使って身近にある資源回収ボックスを見つけ、資源の循環を促進しましょう。
               </p>
               <p className='mt-4'>資源物を店頭回収ボックスに持ち込む際は、不要なものを取り除いたり、汚れを落としたりして、適切に保管、運搬そして再生が出来る状態にして下さい。
               また、持っていくお店などの案内も確認してください。</p>
