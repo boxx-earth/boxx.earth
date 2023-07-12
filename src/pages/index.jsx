@@ -5,14 +5,13 @@ import { Container } from '@/components/Container'
 import {
   GitHubIcon,
   InstagramIcon,
-  TwitterIcon,
+  TwitterIcon
 } from '@/components/SocialIcons'
+
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { MainPhotos } from '@/components/MainPhotos'
 import { Article } from '@/components/Article'
-import { Resume } from '@/components/Resume'
-import { Newsletter } from '@/components/Newsletter'
 import { Stats } from '@/components/Stats'
 import { AppDownloadLinks } from '@/components/AppDownloadLinks'
 
@@ -30,11 +29,11 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          資源の回収ボックス検索プラットフォーム - boxx
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです"
         />
       </Head>
       <Container className="mt-9">
@@ -44,7 +43,7 @@ export default function Home({ articles }) {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             資源が効率的に回収、再利用される社会へ -
-            boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するプラットフォームです。
+            boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです。
           </p>
           <div className="mt-6 flex gap-6">
           <SocialLink
@@ -53,7 +52,6 @@ export default function Home({ articles }) {
               icon={GitHubIcon}
               target="_blank"
               rel="noopener noreferrer"
-
             />
 
             <SocialLink
