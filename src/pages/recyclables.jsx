@@ -21,81 +21,36 @@ export default function Recyclables() {
           <div className="mx-auto max-w-2xl">
               <header className="flex flex-col">
                 <h1 className="text-4xl font-bold whitespace-pre text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                  使う、
-                  戻す、
-                  循環させる。
+                  循環利用されている資源.
                 </h1>
               </header>
               <div className='mt-8 text-base text-zinc-600 dark:text-zinc-400'>
               <p>
-                boxx（ボックス）は、使用済みのペットボトル、プラスチック容器、空き缶、ダンボール箱など、資源物の店頭回収ボックスを地図上で簡単に検索できるアプリです。
-                持続可能な社会の構築に不可欠な循環経済（サーキュラーエコノミー）の実現に向けて、私たちの日常から始めましょう。boxxを使って身近にある資源回収ボックスを見つけ、資源の循環を促進しましょう。
+              日本はリサイクルと資源循環において世界的に注目される国であり、持続可能な未来の実現に向けた積極的な取り組みを行っています。家庭や事業所におけるごみの分別は日本のリサイクルシステムの基盤となっており、可燃ごみ、不燃ごみ、資源ごみ、プラスチックごみ、ペットボトル、缶、紙、ガラスなど、さまざまなカテゴリーに分けて廃棄物の処理及びリサイクルをしています。
               </p>
-              <p className='mt-4'>資源物を店頭回収ボックスに持ち込む際は、不要なものを取り除いたり、汚れを落としたりして、適切に保管、運搬そして再生が出来る状態にして下さい。
-              また、持っていくお店などの案内も確認してください。</p>
-              </div>
-              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>PETボトル</h2>
-              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中をすすいで、キャップやラベルは取り除いて下さい。</p>
-              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
+              <p className='mt-4'>日本のリサイクル・資源循環には法律や制度が重要な役割を果たしています。さらに、日本の文化や教育においては、人々のリサイクルに関する意識が高く、多くの人が関心を持っています。
+              boxxを使って資源の効率的な循環利用を促進させましょう。
+              </p>
               </div>
 
-              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>段ボール</h2>
-              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>ガムテープ、伝票などは取り除いて、たたんで下さい。</p>
+              <article className='mt-16 text-base text-zinc-600 dark:text-zinc-400'>
+              <h2 className='text-base font-semibold text-zinc-800 dark:text-zinc-100'>PETボトル</h2>
+              <p className='mt-3'>
+              2021年度の日本におけるPETボトルの回収率<sub>※1</sub>は94.0%で、回収量は54万6千トンです。
+              またリサイクル率<sub>※2</sub>は86.0%です。<br />
+              回収されたPETボトルは、卵パック、青果物トレイなどのシート（約34%）やPETボトル（ボトルtoボトル。約33%）にリサイクルされています。
+              </p>
+              <div className='mt-8'>
+              <small className='block'>※1 回収率（%）= 回収量/PETボトル販売量</small>
+              <small className='block'>※2 リサイクル率（%）= リサイクル量/PETボトル販売量</small>
+              <small className='block'>出典: <a href='https://www.petbottle-rec.gr.jp/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                PETボトルリサイクル推進協議会</a>
+                「PETボトルリサイクル年次報告書2022」
+              </small>
+
+              </div>
+              </article>
               
-              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-              </div>
-
-
-              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>紙パック</h2>
-              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中を洗って、乾燥し、切り開いて下さい。</p>
-              
-              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-              </div>
-
-
-              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>食品トレイ</h2>
-              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>洗って乾かしくて下さい。</p>
-              
-              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-              </div>
-
-
-              <h2 className='mt-16 text-base font-semibold text-zinc-800 dark:text-zinc-100'>空き缶</h2>
-              <p className='mt-3 text-base text-zinc-600 dark:text-zinc-400'>中をすすいで下さい。</p>
-
-              <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl grayscale -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottle} alt='不要なPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-                <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
-                </div>
-              </div>
-          
           </div>
         </div>
       </Container>
