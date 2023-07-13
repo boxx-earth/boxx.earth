@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import {
@@ -14,15 +13,7 @@ import { MainPhotos } from '@/components/MainPhotos'
 import { Article } from '@/components/Article'
 import { Stats } from '@/components/Stats'
 import { AppDownloadLinks } from '@/components/AppDownloadLinks'
-
-function SocialLink({ icon: Icon, ...props }) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
-  )
-}
-
+import { HomeSocialLink } from '@/components/HomeSocialLink'
 
 export default function Home({ articles }) {
   return (
@@ -46,7 +37,7 @@ export default function Home({ articles }) {
             boxx（ボックス）は資源物の店頭回収ボックスに関する情報を提供するプラットフォームアプリです。
           </p>
           <div className="mt-6 flex gap-6">
-          <SocialLink
+          <HomeSocialLink
               href="https://github.com"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
@@ -54,15 +45,14 @@ export default function Home({ articles }) {
               rel="noopener noreferrer"
             />
 
-            <SocialLink
+            <HomeSocialLink
               href="https://twitter.com/boxx_earth"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
               target="_blank"
               rel="noopener noreferrer"
-
             />
-            <SocialLink
+            <HomeSocialLink
               href="https://instagram.com/boxx.earth/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
