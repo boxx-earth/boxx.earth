@@ -19,6 +19,7 @@ export const AppDownloadLinks: React.FC = (props) => {
           <li className="basis-1/2 relative">
             <Image src="/google-play-badge.png" 
             fill
+            sizes="100vw"
             style={{objectFit: "contain"}}
             alt="Google Playでboxxアプリをダウンロードする." />
           </li>
@@ -34,6 +35,7 @@ export const AppDownloadLinks: React.FC = (props) => {
           <li className="basis-1/2 relative">
             <Image src="/google-play-badge.png" 
             fill
+            sizes="100vw"
             style={{objectFit: "contain"}}
             alt="Google Playでboxxアプリをダウンロードする." />
           </li>
