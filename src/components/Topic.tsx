@@ -1,15 +1,7 @@
 import React from "react";
 import { Card } from "./Card"
 import { formatDate } from "@/lib/formatDate"
-
-type TopicProps = {
-    topic: {
-        slug: string;
-        title: string;
-        date: string;
-        description: string;
-    }
-}
+import { TopicProps } from "@/types/TopicProps";
 
 export const Topic: React.FC<TopicProps> = ({ topic }) => {
     return (

@@ -8,14 +8,14 @@ import {
 } from '@/components/SocialIcons'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
+import { getAllTopics } from '@/lib/getAllTopics'
 import { MainPhotos } from '@/components/MainPhotos'
-import { Article } from '@/components/Article'
 import { Stats } from '@/components/Stats'
 import { AppDownloadLinks } from '@/components/AppDownloadLinks'
 import { HomeSocialLink } from '@/components/HomeSocialLink'
+import { HomeTopic } from '@/components/HomeTopic'
 
-export default function Home({ articles }) {
+export default function Home({ topics }) {
   return (
     <>
       <Head>
@@ -66,8 +66,8 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+            {topics.map((topic) => (
+              <HomeTopic key={topic.slug} topic={topic} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24 order-first lg:order-last">
@@ -87,9 +87,23 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: (await getAllArticles())
+      topics: (await getAllTopics())
         .slice(0, 4)
         .map(({ component, ...meta }) => meta),
     },
   }
 }
+
+// export async function getStaticProps() {
+//   if (process.env.NODE_ENV === 'production') {
+//     await generateRssFeed()
+//   }
+
+//   return {
+//     props: {
+//       articles: (await getAllArticles())
+//         .slice(0, 4)
+//         .map(({ component, ...meta }) => meta),
+//     },
+//   }
+// }
