@@ -7,6 +7,8 @@ projects.jsx
 thank-you.jsx
 uses.jsx
 articles/
+getAllArticles.js
+
 
 # Logs
 logs
