@@ -35,14 +35,14 @@ export default function Recyclables() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">回収率<sub>※1</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7 ">回収率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         94.0<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※2</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7 ">リサイクル率<sub>※2</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         86.0<span className='text-base'>%</span>
                       </dd>
                     </div>
@@ -72,14 +72,14 @@ export default function Recyclables() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">古紙回収率<sub>※1</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">古紙回収率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         94.0<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">回収量</dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">回収量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         1,789<span className='text-base'>万トン</span>
                       </dd>
                     </div>
@@ -106,14 +106,14 @@ export default function Recyclables() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         93.9<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">再生利用重量</dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">再生利用重量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         306,796<span className='text-base'>トン</span>
                       </dd>
                     </div>
@@ -139,14 +139,14 @@ export default function Recyclables() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         93.1<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">再資源化量</dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7 ">再資源化量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         362,846<span className='text-base'>トン</span>
                       </dd>
                     </div>
@@ -173,14 +173,14 @@ export default function Recyclables() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         66.4<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">再商品化量</dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                      <dt className="text-base leading-7">再商品化量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         503,547<span className='text-base'>トン</span>
                       </dd>
                     </div>
@@ -188,7 +188,8 @@ export default function Recyclables() {
                 </div>
               </div>
               
-              <p className='mt-3'>（注）容器包装リサイクル法対象のプラスチック容器包装のみです。<br />
+              <p className='mt-3'>（注）<a href='https://www.env.go.jp/recycle/yoki/a_1_recycle/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                容器包装リサイクル法</a>対象のプラスチック容器包装のみです。<br />
               2021年度の日本におけるプラスチック容器包装のリサイクル率は66.4%で、再商品化量は503,547トンです。
               </p>
               <div className='mt-8'>
