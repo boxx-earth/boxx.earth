@@ -1,10 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-
-import petBottle from '@/images/photos/image-1.jpg'
-import petBottlePrepared from '@/images/photos/image-2.jpg'
 
 export default function Recyclables() {
   return (
@@ -41,13 +37,13 @@ export default function Recyclables() {
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
                       <dt className="text-base leading-7 text-gray-600">回収率<sub>※1</sub></dt>
                       <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        94.0%
+                        94.0<span className='text-base'>%</span>
                       </dd>
                     </div>
                     <div className="mx-auto flex max-w-xs flex-col gap-y-4">
                       <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※2</sub></dt>
                       <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        86.0%
+                        86.0<span className='text-base'>%</span>
                       </dd>
                     </div>
                   </dl>
@@ -70,6 +66,142 @@ export default function Recyclables() {
               </div>
               </article>
               
+              <article className='mt-16 text-base text-zinc-600 dark:text-zinc-400'>
+              <h2 className='text-base font-semibold text-zinc-800 dark:text-zinc-100'>古紙</h2>
+              <div className="py-10 sm:py-14">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                  <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">古紙回収率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        94.0<span className='text-base'>%</span>
+                      </dd>
+                    </div>
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">回収量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        1,789<span className='text-base'>万トン</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              
+              <p className='mt-3'>2022年の日本における古紙回収率は79.5%で、回収量は1,789万トンです。<br />
+              回収された古紙のほとんどは製紙原料としてふたたび紙（再生紙）にリサイクルされ利用されています。
+              </p>
+              <div className='mt-8'>
+              <small className='block'>※1 古紙回収率（%）= 古紙回収量/紙・板紙消費量</small>
+              <small className='block'>出典: <a href='http://www.prpc.or.jp/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                （公財）古紙再生促進センター</a>
+                「日本の紙リサイクル」
+              </small>
+
+              </div>
+              </article>
+
+              <article className='mt-16 text-base text-zinc-600 dark:text-zinc-400'>
+              <h2 className='text-base font-semibold text-zinc-800 dark:text-zinc-100'>アルミ缶</h2>
+              <div className="py-10 sm:py-14">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                  <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        93.9<span className='text-base'>%</span>
+                      </dd>
+                    </div>
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">再生利用重量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        306,796<span className='text-base'>トン</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              
+              <p className='mt-3'>2022年度の日本におけるアルミ缶のリサイクル率は93.9%、再生利用重量は306,796トンです。<br />
+              70%強が再びアルミ缶にリサイクルされ、その他の利用用途は鋳物製造や製鉄所における製鋼過程でのアルミニウム添加剤（脱酸剤）です。
+              </p>
+              <div className='mt-8'>
+              <small className='block'>※1 リサイクル率（%）= 再生利用重量/アルミ缶消費量</small>
+              <small className='block'>出典: <a href='http://www.alumi-can.or.jp/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                アルミ缶リサイクル協会</a>
+                「2022年度 飲料用アルミ缶リサイクル率（再利用率）について」
+              </small>
+
+              </div>
+              </article>
+              <article className='mt-16 text-base text-zinc-600 dark:text-zinc-400'>
+              <h2 className='text-base font-semibold text-zinc-800 dark:text-zinc-100'>スチール缶</h2>
+              <div className="py-10 sm:py-14">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                  <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        93.1<span className='text-base'>%</span>
+                      </dd>
+                    </div>
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">再資源化量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        362,846<span className='text-base'>トン</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              
+              <p className='mt-3'>2021年度の日本におけるスチール缶のリサイクル率は93.1%で、再資源化量は362,846トンです。<br />
+              製鉄メーカー（電炉、高炉、鋳物）がリサイクルし、再び鉄として再利用されます。
+              </p>
+              <div className='mt-8'>
+              <small className='block'>※1 リサイクル率（%）= 再資源化量/スチール缶消費量</small>
+              <small className='block'>出典: <a href='https://steelcan.jp/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                スチール缶リサイクル協会</a>
+                「スチール缶リサイクル年次レポート2022」
+              </small>
+
+              </div>
+              </article>
+
+              <article className='mt-16 text-base text-zinc-600 dark:text-zinc-400'>
+              <h2 className='text-base font-semibold text-zinc-800 dark:text-zinc-100'>プラスチック容器包装</h2>
+              <div className="py-10 sm:py-14">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                  <dl className="grid grid-cols-2 gap-x-8 gap-y-16 text-center">
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">リサイクル率<sub>※1</sub></dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        66.4<span className='text-base'>%</span>
+                      </dd>
+                    </div>
+                    <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt className="text-base leading-7 text-gray-600">再商品化量</dt>
+                      <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        503,547<span className='text-base'>トン</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              
+              <p className='mt-3'>（注）容器包装リサイクル法対象のプラスチック容器包装のみです。<br />
+              2021年度の日本におけるプラスチック容器包装のリサイクル率は66.4%で、再商品化量は503,547トンです。
+              </p>
+              <div className='mt-8'>
+              <small className='block'>※1 リサイクル率（%）= （再商品化量＋特定事業者の自主回収・リサイクル量）/（市町村回収量＋特定事業者の自主回収・リサイクル量）</small>
+              <small className='block'>出典: <a href='https://www.pprc.gr.jp/index.html' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                プラスチック容器包装リサイクル推進協議会</a>
+                「プラねっと2022」、
+                <a href='https://www.jcpra.or.jp/' className='text-teal-500 hover:underline' target='_blank' rel='noopener noreferrer'>
+                  （公財）日本容器包装リサイクル協会</a>
+              </small>
+
+              </div>
+              </article>              
           </div>
         </div>
       </Container>
