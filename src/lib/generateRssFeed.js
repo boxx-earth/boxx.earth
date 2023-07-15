@@ -3,14 +3,14 @@ import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider'
 import { Feed } from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
 
-import { getAllArticles } from './getAllArticles'
+import { getAllTopics } from './getAllTopics'
 
 export async function generateRssFeed() {
-  let articles = await getAllArticles()
+  let topics = await getAllTopics()
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'boxx',
+    email: 'hayama@boxx.earth',
   }
 
   let feed = new Feed({
@@ -28,23 +28,23 @@ export async function generateRssFeed() {
     },
   })
 
-  for (let article of articles) {
-    let url = `${siteUrl}/articles/${article.slug}`
+  for (let topic of topics) {
+    let url = `${siteUrl}/topics/${topic.slug}`
     let html = ReactDOMServer.renderToStaticMarkup(
       <MemoryRouterProvider>
-        <article.component isRssFeed />
+        <topic.component isRssFeed />
       </MemoryRouterProvider>
     )
 
     feed.addItem({
-      title: article.title,
+      title: topic.title,
       id: url,
       link: url,
-      description: article.description,
+      description: topic.description,
       content: html,
       author: [author],
       contributor: [author],
-      date: new Date(article.date),
+      date: new Date(topic.date),
     })
   }
 
