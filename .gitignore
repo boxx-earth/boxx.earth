@@ -1,4 +1,6 @@
 .DS_Store
+
+# pages
 test.jsx
 about0.jsx
 projects.jsx
@@ -9,7 +11,7 @@ uses.jsx
 articles/
 getAllArticles.js
 
-#images/logos
+# images/logos
 airbnb.svg
 animaginary.svg
 cosmos.svg
@@ -19,14 +21,10 @@ open-shuttle.svg
 planetaria.svg
 starbucks.svg
 
-#components
+# components
 Article.tsx
 Newsletter.tsx
-Prose.jsx
 Resume.tsx
-
-
-
 
 # Logs
 logs
