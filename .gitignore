@@ -8,6 +8,8 @@ thank-you.jsx
 uses.jsx
 articles/
 getAllArticles.js
+
+#images/logos
 airbnb.svg
 animaginary.svg
 cosmos.svg
@@ -16,6 +18,14 @@ helio-stream.svg
 open-shuttle.svg
 planetaria.svg
 starbucks.svg
+
+#components
+Article.tsx
+Newsletter.tsx
+Prose.jsx
+Resume.tsx
+
+
 
 
 # Logs
