@@ -1,10 +1,10 @@
 import { MapPin } from "./Icons"
 
 const stats = [
-    { name: 'PETボトル回収ボックス', stat: '71,897' },
-    { name: 'ダンボール・古紙回収ボックス', stat: '58.16%' },
-    { name: '食品トレー', stat: '24.57%' },
-    { name: 'その他', stat: '24.57%' },
+    { name: 'PETボトル回収ボックス', stat: '7,897' },
+    { name: 'ダンボール・古紙回収ボックス', stat: '1,300' },
+    { name: '食品トレー', stat: '1,000' },
+    { name: 'その他', stat: '300' },
   ]
 
 export const Stats = () => {   
@@ -18,7 +18,7 @@ export const Stats = () => {
           {stats.map((item) => (
             <div key={item.name} className="overflow-hidden rounded-2xl border border-zinc-100 p-6 shadow-md dark:shadow-zinc-700/40 dark:border-zinc-700/40">
               <dt className="truncate text-sm font-medium  text-zinc-600 dark:text-zinc-400">{item.name}</dt>
-              <dd className="mt-1 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">{item.stat}</dd>
+              <dd className="mt-1 ml-6 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">{item.stat}</dd>
             </div>
           ))}
         </dl>
