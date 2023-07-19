@@ -4,8 +4,8 @@ import { useRouter } from 'next/router'
 import { Container } from '@/components/Container'
 import { ModeToggle } from '@/components/ModeToggle'
 import { DesktopNavigation, MobileNavigation} from '@/components/HeaderNavigation'
-import { AvatarContainer } from '@/components/AvatarContainer'
-import { Avatar } from '@/components/Avatar'
+import { LogoContainer } from '@/components/LogoContainer'
+import { Logo } from '@/components/Logo'
 
 function clamp(number, a, b) {
   let min = Math.min(a, b)
@@ -140,14 +140,14 @@ export function Header() {
                 style={{ position: 'var(--header-inner-position)' }}
               >
                 <div className="relative">
-                  <AvatarContainer
+                  <LogoContainer
                     className="absolute left-0 top-3 origin-left transition-opacity"
                     style={{
                       opacity: 'var(--avatar-border-opacity, 0)',
                       transform: 'var(--avatar-border-transform)',
                     }}
                   />
-                  <Avatar
+                  <Logo
                     large
                     className="block h-16 w-16 origin-left"
                     style={{ transform: 'var(--avatar-image-transform)' }}
@@ -169,9 +169,9 @@ export function Header() {
             <div className="relative flex gap-4">
               <div className="flex flex-1">
                 {!isHomePage && (
-                  <AvatarContainer>
-                    <Avatar />
-                  </AvatarContainer>
+                  <LogoContainer>
+                    <Logo />
+                  </LogoContainer>
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">

@@ -1,11 +1,11 @@
 import clsx from "clsx"
 import React from "react";
 
-type AvatarContainerProps = {
-    className: string;
+type LogoContainerProps = {
+  className: string;
 }
 
-export const AvatarContainer: React.FC<AvatarContainerProps> = ({ className, ...props }) => {
+export const LogoContainer = ({ className, ...props }: LogoContainerProps) => {
     return (
       <div
         className={clsx(

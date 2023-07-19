@@ -9,7 +9,7 @@ type LogoProps = {
   className?: string;
 }
 
-export const Avatar: React.FC<LogoProps> = ({ large = false, className, ...props }) => {
+export const Logo = ({ large = false, className, ...props }: LogoProps) => {
     return (
       <Link
         href="/"
@@ -22,7 +22,7 @@ export const Avatar: React.FC<LogoProps> = ({ large = false, className, ...props
           alt=""
           sizes={large ? '4rem' : '2.25rem'}
           className={clsx(
-            'rounded-full bg-gradient-to-b from-white from-80% to-teal-300 object-cover',
+            'rounded-full bg-gradient-to-b from-white from-70% to-teal-300 object-cover',
             large ? 'h-16 w-16' : 'h-9 w-9'
           )}
           priority
@@ -30,5 +30,3 @@ export const Avatar: React.FC<LogoProps> = ({ large = false, className, ...props
       </Link>
     )
   }
-  
-  
