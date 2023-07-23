@@ -22,7 +22,7 @@ export const Logo = ({ large = false, className, ...props }: LogoProps) => {
           alt=""
           sizes={large ? '4rem' : '2.25rem'}
           className={clsx(
-            'rounded-full bg-gradient-to-b from-white from-70% to-teal-300 object-cover',
+            'rounded-full bg-gradient-to-b from-teal-50/70 from-80% to-teal-300 object-cover',
             large ? 'h-16 w-16' : 'h-9 w-9'
           )}
           priority
