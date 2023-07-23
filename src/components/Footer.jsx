@@ -25,7 +25,7 @@ export function Footer() {
                 <NavLink href="/privacy">プライバシーポリシー</NavLink>
                 <NavLink href="/contact">お問合せ</NavLink>
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
                 &copy; {new Date().getFullYear()} boxx. All rights reserved.
               </p>
             </div>
