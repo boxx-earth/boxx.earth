@@ -3,8 +3,8 @@ import clsx from "clsx"
 
 import image1 from '@/images/photos/pressed-aluminium-cans.jpg'
 import image2 from '@/images/photos/boxes-at-maruetsu.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
+import image3 from '@/images/photos/screen.jpg'
+import image4 from '@/images/photos/boxes-at-IY.jpg'
 import image5 from '@/images/photos/clean-pet-bottles.jpg'
 
 export const MainPhotos = () => {
