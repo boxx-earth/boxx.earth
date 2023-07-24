@@ -22,8 +22,8 @@ export const Logo = ({ large = false, className, ...props }: LogoProps) => {
           alt=""
           sizes={large ? '4rem' : '2.25rem'}
           className={clsx(
-            'rounded-full bg-gradient-to-b from-teal-50/70 from-80% to-teal-300 object-cover',
-            large ? 'h-16 w-16' : 'h-9 w-9'
+            'rounded-full bg-white/90 object-cover',
+            large ? 'h-16 w-16  shadow-lg ring-2 ring-zinc-900/5 backdrop-blur dark:ring-white/10' : 'h-9 w-9'
           )}
           priority
         />
