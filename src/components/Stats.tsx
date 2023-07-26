@@ -1,10 +1,10 @@
 import { MapPin } from "./Icons"
 
 const stats = [
-    { name: 'PETボトル回収ボックス', stat: '7,897' },
-    { name: 'ダンボール・古紙回収ボックス', stat: '1,300' },
-    { name: '食品トレー', stat: '1,000' },
-    { name: 'その他', stat: '300' },
+    { name: 'PETボトル回収ボックス', stat: '0' },
+    { name: 'ダンボール・古紙回収ボックス', stat: '0' },
+    { name: '食品トレー', stat: '0' },
+    { name: 'その他', stat: '0' },
   ]
 
 export const Stats = () => {   

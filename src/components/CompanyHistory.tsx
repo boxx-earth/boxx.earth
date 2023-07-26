@@ -18,10 +18,14 @@ export default function CompanyHistory() {
                 <div className="relative flex items-center space-x-5">
                   <div>
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-100 ring-4 ring-zinc-100 dark:bg-zinc-200 dark:ring-zinc-200">
-                      <event.icon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
+                      {
+                        event.icon && (
+                          <event.icon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
+                        )
+                      }
                     </span>
                   </div>
                   <div className="flex min-w-0 flex-1 flex-col text-base text-zinc-600 dark:text-zinc-400">

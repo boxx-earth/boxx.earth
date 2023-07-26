@@ -57,10 +57,10 @@ export default function ContactForm() {
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              お問合せフォーム
+              boxxへのご連絡・お問合せ
             </h1>
             <p className="mt-2 text-base leading-8  text-zinc-600 dark:text-zinc-400">
-              お気軽にご連絡ください。
+              こちらのフォームからお気軽にご連絡ください。
             </p>
 
             <form

@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>お問合せフォーム | boxx</title>
+        <title>boxxへのご連絡・お問合せ</title>
         <meta name="description" content="boxxへのご連絡やお問合せはこのフォームからお願いします。" />
       </Head>
       <Container className="mt-16 sm:mt-32">

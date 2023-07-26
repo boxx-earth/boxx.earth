@@ -1,6 +1,14 @@
 import { PartyPopper, ConfettiBall } from './Emojis'
 
-export const history = [
+type HistoryItem = {
+  id: number;
+  content: string;
+  date: string;
+  datetime: string;
+  icon?: React.ElementType;
+}
+
+export const history: HistoryItem[] = [
   {
     id: 1,
     content: 'boxx合同会社設立',
@@ -10,9 +18,15 @@ export const history = [
   },
   {
     id: 2,
-    content: 'boxxアプリをリリース',
+    content: 'boxx webサイトを公開',
     date: '2023年7月',
-    datetime: '2023-07-01',
+    datetime: '2023-07-31',
     icon: PartyPopper,
+  },
+  {
+    id: 3,
+    content: 'boxxアプリをリリース（予定）',
+    date: '2023年8月',
+    datetime: '2023-08-12',
   },
 ]
