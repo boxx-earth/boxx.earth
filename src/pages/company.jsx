@@ -45,7 +45,7 @@ export default function Company() {
 
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={GitHubIcon} className="">
+              <SocialLink href="https://github.com/boxx-earth" icon={GitHubIcon} target="_blank" rel="noopener noreferrer">
                 GitHub
               </SocialLink>
 

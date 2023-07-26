@@ -38,13 +38,12 @@ export default function Home({ topics }) {
           </p>
           <div className="mt-6 flex gap-6">
           <HomeSocialLink
-              href="https://github.com"
+              href="https://github.com/boxx-earth"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
               target="_blank"
               rel="noopener noreferrer"
             />
-
             <HomeSocialLink
               href="https://twitter.com/boxx_earth"
               aria-label="Follow on Twitter"
