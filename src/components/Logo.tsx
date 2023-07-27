@@ -17,16 +17,20 @@ export const Logo = ({ large = false, className, ...props }: LogoProps) => {
         className={clsx(className, 'pointer-events-auto')}
         {...props}
       >
+        <div className="relative">
+          <div className="absolute inset-0 bg-teal-300 rounded-full blur"></div>
         <Image
           src={logoImage}
           alt=""
           sizes={large ? '4rem' : '2.25rem'}
           className={clsx(
-            'rounded-full bg-white/90 object-cover',
-            large ? 'h-16 w-16  shadow-lg ring-2 ring-zinc-900/5 backdrop-blur dark:ring-white/10' : 'h-9 w-9'
+            'relative rounded-full bg-white object-cover',
+            large ? 'h-16 w-16' : 'h-9 w-9'
           )}
           priority
         />
+        </div>
+
       </Link>
     )
   }
