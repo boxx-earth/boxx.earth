@@ -9,6 +9,7 @@ export const AppDownloadLinks: React.FC = () => {
             <ArrowDownOnSquare className="h-6 w-6" />
           <span className="ml-3">boxxアプリをダウンロード</span>
         </h2>
+        <p className="my-5 text-sm text-zinc-900 dark:text-zinc-100">リリース予定は2023年8月12日です。</p>
         <ul className="flex mt-5 h-12">
           <li className="basis-1/2 relative">
             <Image src="/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
