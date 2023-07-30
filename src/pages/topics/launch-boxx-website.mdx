@@ -1,0 +1,15 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { ConfettiBall } from '@/components/Emojis'
+
+export const meta = {
+  author: 'boxx',
+  date: '2023-07-30',
+  title: 'boxx Webサイトを公開',
+  description:
+    'boxxのWebサイトを公開しました！',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+boxxのWebサイトを公開しました<ConfettiBall className='h-16 w-16' />
+
