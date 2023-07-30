@@ -23,10 +23,4 @@ export const history: HistoryItem[] = [
     datetime: '2023-07-31',
     icon: PartyPopper,
   },
-  {
-    id: 3,
-    content: 'boxxアプリをリリース（予定）',
-    date: '2023年8月',
-    datetime: '2023-08-12',
-  },
 ]

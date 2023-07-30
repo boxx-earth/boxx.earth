@@ -6,10 +6,19 @@ import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 import petBottles from '@/images/photos/petBottles.jpg'
+import preparedPetBottles from '@/images/photos/preparedPetBottles.jpg'
+
+import cardboard from '@/images/photos/cardboard.jpg'
+import preparedCardboard from '@/images/photos/preparedCardboard.jpg'
+
 import milkCartons from '@/images/photos/milkCartons.jpg'
+import preparedMilkCartons from '@/images/photos/preparedMilkCartons.jpg'
+
 import foamTrays from '@/images/photos/foamTrays.jpg'
+import preparedFoamTrays from '@/images/photos/preparedFoamTrays.jpg'
+
 import cans from '@/images/photos/cans.jpg'
-import petBottlePrepared from '@/images/photos/image-2.jpg'
+import preparedCans from '@/images/photos/preparedCans.jpg'
 
 function ItemSection({children, ...props}) {
   return(
@@ -60,7 +69,7 @@ export default function About() {
                   <Image src={petBottles} alt='PETボトル飲料の写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={preparedPetBottles} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
               </div>
             </RecyclableItem>
@@ -70,10 +79,10 @@ export default function About() {
               <p>ガムテープや伝票などは取り除いて、たたんで下さい。</p>
               <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl -rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottles} alt='PETボトル飲料の写真' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={cardboard} alt='ダンボール箱の写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={preparedCardboard} alt='畳んだダンボール箱' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
               </div>
             </RecyclableItem>
@@ -87,7 +96,7 @@ export default function About() {
                   <Image src={milkCartons} alt='紙・牛乳パックの写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={preparedMilkCartons} alt='中をすすいで、乾燥し、開いた紙パックの写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
               </div>
             </RecyclableItem>
@@ -100,12 +109,12 @@ export default function About() {
                   <Image src={foamTrays} alt='発泡トレーの写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={preparedFoamTrays} alt='洗って乾かした食品トレーの写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
               </div>
             </RecyclableItem>
           </ItemSection>
-          <ItemSection title="空き缶">
+          <ItemSection title="飲料缶">
             <RecyclableItem>
             <p>中をすすいで下さい。</p>
               <div className='mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 justify-items-center'>
@@ -113,7 +122,7 @@ export default function About() {
                   <Image src={cans} alt='飲料缶の写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
                 <div className='relative aspect-[9/10] w-64 overflow-hidden rounded-xl rotate-2 bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'>
-                  <Image src={petBottlePrepared} alt='キャップを外し、ラベルを剥がしたPETボトル' className='absolute inset-0 h-full w-full object-cover' />
+                  <Image src={preparedCans} alt='中をすすいだ飲料缶の写真' className='absolute inset-0 h-full w-full object-cover' />
                 </div>
               </div>
             </RecyclableItem>
