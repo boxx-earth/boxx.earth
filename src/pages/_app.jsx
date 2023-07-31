@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { Analytics } from '@/components/Analytics'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
@@ -28,6 +29,7 @@ export default function App({ Component, pageProps, router }) {
       </div>
       <div className="relative">
         <Header />
+        <Analytics />
         <main>
           <Component previousPathname={previousPathname} {...pageProps} />
         </main>
