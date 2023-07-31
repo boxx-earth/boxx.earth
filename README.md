@@ -1,6 +1,6 @@
-# Spotlight
+# boxx.earth Website
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+boxx.earth uses [Next.js](https://Nextjs.org) for its website.
 
 ## Getting started
 
